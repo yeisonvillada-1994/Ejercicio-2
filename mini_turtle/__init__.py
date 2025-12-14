@@ -1,5 +1,3 @@
-from .drawer_logic import *
+from .drawer_logic import Tortuga
 
-__all__ = [
-    'adelante', 'abajo', 'reiniciar'
-]
+__all__ = ['Tortuga']

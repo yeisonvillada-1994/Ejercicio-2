@@ -1,32 +1,47 @@
-from mini_turtle import adelante, abajo, reiniciar
+from mini_turtle import Tortuga
 
-# Script que importa las funciones y dibuja una escalera
 print("Dibujando una escalera")
 print()
 
-# Reiniciar la posición antes de comenzar
-reiniciar()
+# crear la primera tortuga
+t1 = Tortuga()
 
-# Dibujar múltiples escalones para crear una escalera
+# dibujar escalera normal
 for i in range(3):
-    #print(f"Escalón {i + 1}:")
-    adelante()  # Dibuja la línea horizontal
-    abajo()     # Dibuja la línea vertical
+    t1.adelante()
+    t1.abajo()
 
 print("Escalera completada")
 
-# Reiniciar la posición para la escalera inversa
-reiniciar()
+# resetear la tortuga
+t1.reiniciar()
 
 for i in range(3):
-    adelante()  # posición final a la derecha
+    t1.adelante()
 
 print()
 print("Escalera inversa:")
 
-# escalera inversa
+# hacer escalera al reves
 for i in range(3):
-    abajo()     # Primero la línea vertical
-    adelante()  # Luego la línea horizontal
+    t1.abajo()
+    t1.adelante()
+
+print()
+print("Probando que dos tortugas no interfieren:")
+
+# crear dos tortugas distintas
+t2 = Tortuga()
+t3 = Tortuga()
+
+print("Tortuga 2:")
+t2.adelante()
+t2.abajo()
+
+print("Tortuga 3:")
+for i in range(2):
+    t3.adelante()
+    t3.abajo()
+
 
 

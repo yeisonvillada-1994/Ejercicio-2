@@ -1,38 +1,23 @@
-#Reto5
-posicion_x = 0        # posición acumulada de la tortuga
-pasos_h = 0               # pasos horizontales fijos
-pasos_v = 0               # pasos verticales fijos
-
-# Entradas del usuario
 pasos_h = int(input("Ingrese pasos hacia adelante: "))
 pasos_v = int(input("Ingrese pasos hacia abajo: "))
 
-
-def adelante():
-    global posicion_x, pasos_h
-    # imprimir escalón horizontal
-    print(" " * posicion_x , end="")
-    print("-" * pasos_h + ">")
-    # actualizar posición horizontal acumulada
-    posicion_x += pasos_h
-
-
-def abajo():
-    global posicion_x, pasos_v
-
-    # líneas verticales alineadas al final del escalón
-    for i in range(pasos_v):
-        print(" " * posicion_x + "|")
-
-    # punta final abajo
-    print(" " * posicion_x + "v")
+class Tortuga:
+    def __init__(self):
+        # Inicializar la posición
+        self.posicion_x = 0
     
+    def adelante(self):
+        # mover horizontal
+        print(" " * self.posicion_x, end="")
+        print("-" * pasos_h + ">")
+        self.posicion_x += pasos_h
     
-def reiniciar():
-    global posicion_x
-    posicion_x = 0
-
-
-#for i in range(3):
-#    adelante()
-#    abajo()
+    def abajo(self):
+        # bajar vertical
+        for i in range(pasos_v):
+            print(" " * self.posicion_x + "|")
+        print(" " * self.posicion_x + "v")
+    
+    def reiniciar(self):
+        # volver al inicio
+        self.posicion_x = 0
