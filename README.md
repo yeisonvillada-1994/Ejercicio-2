@@ -2,9 +2,7 @@
 
 ## 📌 Descripción general
 
-Este ejercicio es una práctica básica de programación en Python donde se utiliza una clase llamada `Tortuga` para simular movimientos en la consola mediante texto. El objetivo principal es reforzar conceptos fundamentales como **clases**, **objetos**, **métodos**, **ciclos** y **entrada de datos por teclado**.
-
-El programa dibuja diferentes formas similares a una escalera usando caracteres ASCII, permitiendo visualizar cómo se ejecutan las instrucciones paso a paso.
+Este ejercicio dibuja una escalera en la consola usando funciones en Python. Permite mover la tortuga hacia adelante y hacia abajo utilizando caracteres de texto.
 
 ---
 
