@@ -30,6 +30,6 @@ Al ejecutar el programa:
 
 En el siguiente enlace se puede consultar el código completo del ejercicio en GitHub:
 
-👉 [Ver código del ejercicio en GitHub](https://github.com/yeisonvillada-1994/Ejercicio-1/tree/main)
+👉 [Ver código del ejercicio en GitHub](https://github.com/yeisonvillada-1994/Ejercicio-2/tree/main)
 
 ---
